@@ -10,6 +10,7 @@
 5. 默认在UTC的4:01运行，北京时间00:01，可以自行修改
 6. 在Actions中运行，验证是否部署成功
 7. 请将仓库设置为private，确保你的私有密钥不会公开
+8. 给本项目点个Star，支持下本项目
 ## 相关代码展示：
 <img width="782" alt="image" src="https://github.com/user-attachments/assets/28ed0076-489a-475a-b5ce-ef9584abbb03" />
 
