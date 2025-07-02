@@ -41,9 +41,5 @@ jobs:
     - name: Run script
       run: python main.py
 
-相关代码截图：
-
-<img width="782" alt="image" src="https://github.com/user-attachments/assets/28ed0076-489a-475a-b5ce-ef9584abbb03" />
-警告⚠️：
 
 若使用本人脚本导致被API滥用触发封号规则与本人无关，后果自负，本项目为教学项目，请下载后24小时内删除
