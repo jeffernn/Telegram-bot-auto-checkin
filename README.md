@@ -10,34 +10,40 @@
 5. 记得把github action中的定时注释取消。默认在UTC的4.01运行，北京时间00.01，可以自行修改。
 6. 在Actions中运行，确保正常
 7. 请将仓库设置为private
-⚙️ GitHub Actions 配置
-name: Telegram Auto Checkin
+
+## 定时Action脚本代码：
+```yaml
+name: Scheduled Job
 
 on:
   schedule:
-    - cron: '1 16 * * *'  # 每天UTC 16:01（北京时间00:01）
-  workflow_dispatch:      # 允许手动触发
-
+     - cron: '1 16 * * *'
+  workflow_dispatch:
+  
 jobs:
-  checkin:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.8'
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install telethon
 
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install telethon
+    - name: Run script
+      run: python main.py
 
-      - name: Run checkin script
-        run: python main.py
-## 相关代码截图：
+相关代码截图：
+
 <img width="782" alt="image" src="https://github.com/user-attachments/assets/28ed0076-489a-475a-b5ce-ef9584abbb03" />
-## 警告⚠️：
+警告⚠️：
+
 若使用本人脚本导致被API滥用触发封号规则与本人无关，后果自负，本项目为教学项目，请下载后24小时内删除
