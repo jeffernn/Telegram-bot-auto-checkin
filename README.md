@@ -13,7 +13,7 @@
 7. 请将仓库设置为private，确保你的私有密钥不会公开
 8. 给本项目点个Star，支持下本项目
 ## 相关代码展示：
-<img width="782" alt="image" src="https://github.com/user-attachments/assets/28ed0076-489a-475a-b5ce-ef9584abbb03" />
+<img width="782" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/205483285/461366241-28ed0076-489a-475a-b5ce-ef9584abbb03.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250703%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250703T174216Z&X-Amz-Expires=300&X-Amz-Signature=1484cdfbf2ce3e420db0a7dee831927555fd0338f81434b5cd7d4e0cc75cee24&X-Amz-SignedHeaders=host" />
 
 ## 定时Action脚本代码：
 ```yaml
