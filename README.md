@@ -1,8 +1,7 @@
 # auto-telegram-bot-checkin
-1. 利用github中的Action功能自动执行python脚本
-2. 自动给telegram中指定的机器人发送指定的命令
-3. 注意‼️Action要先执行一次激活才可以定时执行，由于Github的问题，执行并非准时，UTC时间不是北京时间！有8小时时差。
-4. https://crontab.guru/ 此网站可以编写Cron时间。
+1. 利用github中的Action功能自动执行python脚本,自动给telegram中指定的机器人发送指定的命令
+2. 温馨提示：Action要先执行一次激活才可以定时执行，由于Github的问题，执行并非准时，UTC时间不是北京时间，有8小时时差
+3. https://crontab.guru/ 此网站可以编写Cron时间
 
 ## 使用步骤：
 1. 首先在 https://my.telegram.org/ 中获取api和hash，并将代码中的信息替换为你自己的 API和hash
