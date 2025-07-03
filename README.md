@@ -20,7 +20,7 @@ name: Scheduled Job
 
 on:
   schedule:
-     - cron: '1 16 * * *'
+     - cron: "1 16 * * *"
   workflow_dispatch:
   
 jobs:
